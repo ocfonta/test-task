@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Люба Пономарева">
+  <meta name="description" content="Test-task">
+  <link rel="stylesheet" href="blocks/style.css">
+  <title>Test</title>
+</head>
+<body>
+<main class="main">
+    <button type="button" class="button main-button">Регистрация</button>
+
+ <section class="popup">
+    <div class="popup__content">
+        <img src="./images/close-icon.svg" alt="close" class="popup__close">
+       <h3 class="popup__title">Регистрация</h3>
+       <form class="popup__form" name="signup">
+         <span class="popup__form-description">Email</span>
+         <input type="text" id="emailreg" name="email"  class="popup__input popup__input_type_email input__error-message__true" pattern="^([A-Za-z0-9]+[-_\.])*[A-Za-z0-9]+@([A-Za-z0-9]+[-_\.])*[A-Za-z0-9]+\.[A-Za-z]{2,}$" required placeholder="Введите почту">
+         <span id="error-email" class="popup__error-message"></span>
+         <span class="popup__form-description">Никнейм</span>
+         <input type="text" id="namereg" name="name"  class="popup__input popup__input_type_name input__error-message__true" required placeholder="Введите ваш никнейм">
+         <span id="error-name" class="popup__error-message"></span>
+         <span class="popup__form-description">Пароль</span>
+         <input type="password" id="passwordreg" name="password" class="popup__input popup__input_type_password input__error-message__true" required minlength="6"  placeholder="Введите пароль">
+         <span id="error-password" class="popup__error-message" name="password-error"></span>
+
+         <button  type="submit" class=" popup__button popup__button_type_reg" disabled>Зарегистрироваться</button>
+         <span id="server-error-signup" class="server-error popup__error-message invisible" name="server-error"></span>
+
+       </form>
+       <span class="popup__else-message">или <span class="link popup__else-popup-link popup__else-popup-link-signin">Войти</span>
+     </div>
+</section> 
+</main>
+</body>
+</html>

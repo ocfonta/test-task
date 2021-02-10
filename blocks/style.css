@@ -1,0 +1,14 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts.css);
+@import url(./button/button.css);
+@import url(./popup/popup.css);
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.invisible {
+    display: none;
+}

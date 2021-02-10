@@ -1,0 +1,16 @@
+.popup__content {
+  display: flex;
+  flex-direction: column;
+
+  width: 481px;
+  height: 700px;
+  background-color: #fff;
+  position: relative;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  padding: 40px 41px 39px 40px;
+}
+.popup__content_type_success {
+  min-height: 182px;
+  padding: 43px 36px 51px 36px;
+}
